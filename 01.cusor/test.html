@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        console.log('DOMContentLoaded');
+    });
+    const fn = (data) => {
+        const res = data.map((item) => {
+            return item.name;
+        });
+        return res;
+    }
+    const data = [
+        { name: 'John', age: 20 },
+        { name: 'Jane', age: 21 },
+        { name: 'Jim', age: 22 },
+    ]
+    const res = fn(data);
+    console.log(res);
+
+    // 使用for重构 fn函数   
+    const fn1 = (data) => {
+        const res = [];
+        for (let i = 0; i < data.length; i++) {
+            res.push(data[i].name);
+        }
+        return res;
+    }
+    const res1 = fn1(data);
+    console.log(res1);
+    console.log(1);
+    console.log(2);
+
+
+    // 姓名
+    const name = 'John';
+    // 年龄
+    const age = 20;
+    // 城市
+    const city = 'New York';
+    // 国家
+    const country = 'USA';
+    // 邮箱
+    const email = 'john@example.com';
+    // 电话
+    const phone = '1234567890';
+    // 地址
+    const address = '123 Main St, Anytown, USA';
+
+
+
+
+</script>
+
+</html>
